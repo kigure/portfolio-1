@@ -60,14 +60,20 @@ img {
   text-align: center;
 }
 
+
+
 #main-visual {
   margin-bottom: 120px;
 }
 
-#main-visual img {
+/* #main-visual img {
   width: 100%;
   height: calc(100vh - 80px);
   object-fit: cover;
+} */
+
+#video {
+  width: 100%;
 }
 
 #news {

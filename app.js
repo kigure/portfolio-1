@@ -10,5 +10,25 @@ $(function(){
     }
   );
 
+  $('#NEWS').on('click',function(){
+    const newsTop = $('#news').offset().top;
+    $("html").animate({scrollTop: newsTop});
+  });
+
+  $('#ABOUT').on('click',function(){
+    const aboutTop = $('#about').offset().top;
+    $("html").animate({scrollTop: aboutTop});
+  });
+
+  $('#BUSINESS').on('click',function(){
+    const businessTop = $('#business').offset().top;
+    $("html").animate({scrollTop: businessTop});
+  });
   
+  $('#COMPANY').on('click',function(){
+    const companyTop = $('#company').offset().top;
+    $("html").animate({scrollTop: companyTop});
+  });
+
+
 });
