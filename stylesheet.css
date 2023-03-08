@@ -139,6 +139,10 @@ img {
   padding: 180px 5% 0 5%;
 }
 
+#about .text p {
+  line-height: 2.2;
+}
+
 .section-title {
   font-weight: normal;
   line-height: 1;
