@@ -40,6 +40,7 @@ img {
 #header .inner li {
   margin-right: 30px;
   list-style: none;
+  cursor: pointer;
 }
 
 #header .inner li:last-child {
@@ -65,6 +66,24 @@ img {
 
 #main-visual {
   margin-bottom: 120px;
+  position: relative;
+}
+
+#main-visual .text {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); /*上下左右中央寄せ*/
+  text-align:center;
+}
+
+#main-visual .text p {
+  font-size:5em;
+  line-height:0.95em;
+  font-weight:bold;
+  color: #FFF;
+  text-shadow: 0 0 0.2em rgba(0,0,0,1);
 }
 
 #video {
@@ -288,8 +307,30 @@ img {
   font-size: 0.625rem;
 }
 
+.button-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin-right: 5px;
+  font-size: 50px;
+  color: #000;
+  cursor: pointer;
+  transition: .3s;
+  
+  /*デフォルトで非表示にする*/
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*このクラスが付与されると表示する*/
+.active {
+  opacity: 1;
+  visibility: visible;
+}
 
 
+
+/* レスポンシブ */
 @media screen and (max-width: 900px) {
   #header .inner {
     flex-direction: column;
@@ -307,6 +348,10 @@ img {
 
   #main-visual {
     margin-bottom: 80px;
+  }
+
+  #main-visual .text p {
+    font-size: 2em;
   }
 
   #news {
