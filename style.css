@@ -328,7 +328,12 @@ img {
   visibility: visible;
 }
 
-
+/* 900px以下で、要素を表示 */
+@media (min-width: 900px) {
+  #hidden {
+    display: none;
+  }
+}
 
 /* レスポンシブ */
 @media screen and (max-width: 900px) {
@@ -491,5 +496,19 @@ img {
   #footer .flex .logo {
     margin-bottom: 10px;
   }
+
+  #hidden {
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    font-size: 0.75rem;
+    margin-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
 
 }

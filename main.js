@@ -37,22 +37,22 @@ $(function(){
   // マウスをクリックしたら選択した要素にスクロール
   $('#NEWS').on('click',function(){
     const newsTop = $('#news').offset().top;
-    $("html").animate({scrollTop: newsTop});
+    $("html").animate({scrollTop: newsTop}, 1500);
   });
 
   $('#ABOUT').on('click',function(){
     const aboutTop = $('#about').offset().top;
-    $("html").animate({scrollTop: aboutTop});
+    $("html").animate({scrollTop: aboutTop}, 2500);
   });
 
   $('#BUSINESS').on('click',function(){
     const businessTop = $('#business').offset().top;
-    $("html").animate({scrollTop: businessTop});
+    $("html").animate({scrollTop: businessTop}, 2500);
   });
   
   $('#COMPANY').on('click',function(){
     const companyTop = $('#company').offset().top;
-    $("html").animate({scrollTop: companyTop});
+    $("html").animate({scrollTop: companyTop}, 3000);
   });
   
   var btn = $('.button-top');
@@ -73,5 +73,4 @@ $(function(){
   });
 
   });
-
 });
